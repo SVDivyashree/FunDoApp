@@ -11,24 +11,24 @@ import { TrashedNotesComponent } from './trashed-notes/trashed-notes.component';
 import { ViewNoteComponent } from './view-note/view-note.component';
 
 const appRoutes: Routes = [
- 
+
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
-  { path: 'home', component:HomeComponent ,
+  { path: 'home', component: HomeComponent ,
   children: [
-    
+
     { path: '', redirectTo: 'viewnotes', pathMatch: 'full' },
-    { path: 'archivenote', component:ArchiveNotesComponent},
-    { path: 'trashednote', component:TrashedNotesComponent},
+    { path: 'archivenote', component: ArchiveNotesComponent},
+    { path: 'trashednote', component: TrashedNotesComponent},
     { path: 'viewnotes', component: ViewNoteComponent }
   ]
 
 },
-{path: 'resetpassword/:id',component:ResetpasswordComponent},
-{path: 'forgotpassword',component:ForgotpasswordComponent},
+{path: 'resetpassword/:id', component: ResetpasswordComponent},
+{path: 'forgotpassword', component: ForgotpasswordComponent},
   { path: '**', redirectTo: 'login' , pathMatch: 'full'}
  ];
-  @NgModule({
+@NgModule({
     imports: [RouterModule.forRoot(appRoutes)],
     exports: [RouterModule]
     })

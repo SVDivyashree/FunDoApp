@@ -8,7 +8,7 @@ import {AppMaterialModule} from './app-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './registration/registration.component';
 import { HomeComponent } from './home/home.component';
-import { MatCardModule,MatExpansionModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatCardModule, MatExpansionModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { UpdateNoteComponent } from './update-note/update-note.component';
@@ -29,21 +29,21 @@ import { MoreButtonDirective } from './more-button.directive';
     LoginComponent,
     RegistrationComponent,
     HomeComponent,
-    
+
     ForgotpasswordComponent,
     ResetpasswordComponent,
-   
+
     UpdateNoteComponent,
     ArchiveNotesComponent,
     TrashedNotesComponent,
     PinnedNoteComponent,
     SideNavComponent,
     ViewNoteComponent,
-    
+
     NoteComponent,
-    
+
     MoreButtonDirective,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -52,15 +52,15 @@ import { MoreButtonDirective } from './more-button.directive';
     BrowserAnimationsModule,
     MatCardModule,
     MatExpansionModule
-  
 
 
-    
-  
+
+
+
   ],
-  entryComponents: [UpdateNoteComponent,PinnedNoteComponent],
+  entryComponents: [UpdateNoteComponent, PinnedNoteComponent],
 
-  providers: [{provide: MatDialogRef, useValue: {}},{ provide: MAT_DIALOG_DATA, useValue: [] }],
+  providers: [{provide: MatDialogRef, useValue: {}}, { provide: MAT_DIALOG_DATA, useValue: [] }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

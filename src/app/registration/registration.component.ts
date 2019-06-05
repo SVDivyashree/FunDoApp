@@ -38,6 +38,7 @@ export class RegistrationComponent implements OnInit {
     console.log(user);
     this.userService.register(user).subscribe(response => {
       console.log(response);
+// tslint:disable-next-line: triple-equals
       if (response.status == 200) {
         console.log(response.body.header);
 
